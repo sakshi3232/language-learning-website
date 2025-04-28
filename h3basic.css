@@ -1,0 +1,58 @@
+body {
+  position: absolute;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-image:linear-gradient(rgb(245, 233, 233),rgb(240, 230, 230)), url(images/bg3.png);
+  background-size: cover; 
+  scroll-padding: 200 px;
+   }
+
+  
+
+   .a{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 10px;
+  }
+  
+  .b{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 20px;
+  }
+  
+  .c{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
+  
+  .d{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
+  
+  .e{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
+  
+  .f{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
+  
+  .g{
+    width: 150px;
+    padding-top: 150px;
+    padding-left: 30px;
+  }
+  
+.btn{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ }

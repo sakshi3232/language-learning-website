@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEW: English to Marathi Translator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .header {
+            background-color: #b62400;
+            padding: 20px 0;
+            color: white;
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        textarea {
+            width: 80%;
+            max-width: 600px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            outline: none;
+            color:#b62400;
+        }
+        textarea:focus {
+            border-color: #b62400;
+        }
+        .btn {
+            padding: 12px 20px;
+            background-color: #b62400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color:#b62400;
+        }
+        .output {
+            background-color: #e8f0fe;
+            color:#b62400;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 20px auto;
+            font-size: 18px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #b62400;
+            color: white;
+            text-align: center;
+        }
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        async function translateText() {
+            const inputText = document.getElementById('english-text').value;
+            
+            // Fetch API call to your Flask backend
+            const response = await fetch('http://127.0.0.1:5000/translate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ text: inputText }),
+            });
+
+            const data = await response.json();
+            document.getElementById('translated-text').innerText = data.translation;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h2>English to Marathi Translator</h2>
+    </div>
+
+    <div class="container">
+        <p>Enter the text in English to translate it into Marathi:</p>
+
+        <!-- Input box for English text -->
+        <textarea id="english-text" placeholder="Enter text here..."></textarea><br>
+
+        <!-- Button to trigger the translation -->
+        <button class="btn" onclick="translateText()">Translate</button>
+
+        <!-- Display the translation result -->
+        <div class="output">
+            <h3>Translation in Marathi:</h3>
+            <p id="translated-text"></p>
+        </div>
+
+        <a href="/homepage.html" class="btn">Go Back to Home</a>
+    </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>मराठी Learning</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <link rel="stylesheet" href="languages.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to bottom right, #f39c12, #e74c3c);
+        color: white;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.3s;
+        width: 100%;
+      }
+
+      .btn1 {
+        background: #e67e22;
+      }
+
+      .btn2 {
+        background: #d35400;
+      }
+
+      .btn3 {
+        background: #c0392b;
+      }
+
+      .btn4 {
+        background: #34495e;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        background: #2ecc71;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+        width: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      hr {
+        margin: 30px 0;
+        border: none;
+        height: 2px;
+        background: white;
+        width: 80%;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+        .btn {
+          font-size: 1rem;
+          padding: 10px 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>मराठी Learning</h1>
+
+        <!-- Buttons Section -->
+        <div class="buttons">
+          <a href="mbasic.html"><button class="btn btn1">Basic</button></a>
+          <a href="mvideo.html"><button class="btn btn2">Video Lecture</button></a>
+          <a href="mquiz.html"><button class="btn btn3">Quiz</button></a>
+
+          <hr>
+
+          <a href="home.html"><button class="btn btn4">Back</button></a>
+        </div>
+    </div>
+
+  </body>
+</html>

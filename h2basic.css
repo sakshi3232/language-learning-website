@@ -1,0 +1,144 @@
+
+
+  body {
+    position: absolute;
+    background-repeat: no-repeat;
+    margin: auto;
+    background-image:linear-gradient(rgb(245, 233, 233),rgb(240, 230, 230)), url(images/bg2.png);
+    background-size: cover; 
+    scroll-padding: 200 px;
+     }
+
+    
+
+     .a{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 10px;
+    }
+    
+    .b{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 20px;
+    }
+    
+    .c{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 30px;
+    }
+    
+    .d{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 30px;
+    }
+    
+    .e{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 30px;
+    }
+    
+    .f{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 30px;
+    }
+    
+    .g{
+      width: 150px;
+      padding-top: 150px;
+      padding-left: 30px;
+    }
+    
+    .h{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 10px;
+    }
+    
+    .i{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 20px;
+    }
+    
+    .j{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .k{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .l{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .m{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .n{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .o{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 10px;
+    }
+    
+    .p{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 20px;
+    }
+    
+    .q{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .r{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .s{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .t{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+    .u{
+      width: 150px;
+      padding-top: 120px;
+      padding-left: 30px;
+    }
+    
+.btn{
+ text-align: center;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
