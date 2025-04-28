@@ -123,7 +123,3 @@ git push -u origin main
 ## 📬 Contact
 
 If you have any questions or suggestions, feel free to open an issue or contact me via GitHub.
-
----
-
-Let me know if you want this translated into Marathi too or want badges/logos added! 🚀
